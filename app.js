@@ -15,7 +15,7 @@ const connectDB = require('./db/connect');
 //routes
 
 app.get('/',(req,res)=>{
-    res.send('<h1>Store API</h1><a href="/api/v1/products">Produtcs</a>')
+    res.send('<h1>Store API</h1><a href="/api/v1/products?featured=true">Produtcs</a>')
 })
 
 app.use('/api/v1/products', productRouter);
